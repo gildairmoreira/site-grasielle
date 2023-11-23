@@ -13,6 +13,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
+      fontFamily: {
+        sans: ['var(--font-montserrat)', 'sans-serif'],
+        serif: ['var(--font-dmtext)', 'serif']
+      },
       colors: {
         dark__principal: {
           100: 'rgba(0, 0, 0, 0.87)',
