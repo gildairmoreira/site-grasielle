@@ -11,49 +11,49 @@ const services: IServicesProps[] = [
   {
     title: 'Assessoria na aquisição de imóveis em leilão',
     image: '/images/Icone_Imoveis.png',
-    alt: '',
+    alt: 'Icone de Imovel',
     id: 1
   },
   {
     title: 'Constituição de holding patrimonial',
     image: '/images/Icone_Pessoas.png',
-    alt: '',
+    alt: 'Icone de Pessoas',
     id: 2
   },
   {
     title: 'Ajuizamento e defesa em processos de direito imobiliário',
     image: '/images/Icone_Direito.png',
-    alt: '',
+    alt: 'Icone do Direito',
     id: 3
   },
   {
     title: 'Constituição de ônus reais',
     image: '/images/Icone_Onus.png',
-    alt: '',
+    alt: 'Icone de Onus',
     id: 4
   },
   {
     title: 'Assessoria Judicial para Redução de ITBI e ITCMD',
     image: '/images/Icone_Reducao.png',
-    alt: '',
+    alt: 'Icone de Reducao',
     id: 5
   },
   {
     title: 'Assessoria judicial para utilização de FGTS fora do SFH',
     image: '/images/Icone_Imposto.png',
-    alt: '',
+    alt: 'Icone de Imposto',
     id: 6
   },
   {
     title: 'Assessoria jurídica para condomínios e associações',
     image: '/images/Icone_Condominio.png',
-    alt: '',
+    alt: 'Icone de Condominio',
     id: 7
   },
   {
     title: 'Elaboração e negociação de Contratos Imobiliários',
     image: '/images/Icone_Contrato.png',
-    alt: '',
+    alt: 'Icone de Contrato',
     id: 8
   }
 ];
@@ -68,7 +68,7 @@ export function AtuationAreas() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex flex-col items-center bg-transparent p-4 rounded-md shadow-md border-4 border-[#626262]"
+            className="flex flex-col items-center bg-transparent px-7 py-3 rounded-md shadow-md border-4 border-[#626262]"
           >
             <Image
               src={service.image}

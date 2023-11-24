@@ -4,7 +4,7 @@ export function About() {
   return (
     <>
       <section
-        className="w-full h-screen my-[5%] px-[3%] bg-white flex flex-col bg-no-repeat bg  bg-[length:500px_500px] bg-right"
+        className="w-full my-[5%] px-[3%] bg-white flex flex-col bg-no-repeat bg  bg-[length:500px_500px] bg-right"
         style={{ backgroundImage: "url('images/martelo.svg')" }}
       >
         <main className="flex">
