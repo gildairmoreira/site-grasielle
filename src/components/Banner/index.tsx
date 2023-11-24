@@ -8,7 +8,8 @@ export function Banner() {
         style={{ backgroundImage: "url('/images/banner-fundo.png')" }}
       >
         {/* Parte esquerda com títulos */}
-        <div className="w-1/2 h-[80vh] flex justify-center flex-col ml-8 p-9 backdrop-blur-xl bg-white/40 rounded-lg shadow-xl">
+        <div className="w-1/2 h-[80vh] flex justify-center flex-col ml-8 p-9 ">
+          {/* backdrop-blur-xl bg-white/40 rounded-lg shadow-xl */}
           <h3 className="text-3xl text-gold__principal-300 font-dmtext">
             Advocacia de Excelência
           </h3>
