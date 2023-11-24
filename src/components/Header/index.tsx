@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 export function Header() {
   return (
-    <header className="font-montserrat font-medium flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-1/4">
+    <header className="font-montserrat font-medium flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh]">
       <div className="flex justify-between w-full">
         {/* Logo */}
         <Link href="/">
@@ -79,7 +79,10 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaWhatsapp styles={} color='#A08356' size="2rem" />
+            <FaWhatsapp
+              className="text-gold__principal-400 transition-colors duration-300 ease-in-out hover:text-white ml-3"
+              size="2rem"
+            />
           </a>
         </div>
       </div>

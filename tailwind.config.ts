@@ -13,10 +13,6 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
-      fontFamily: {
-        sans: ['var(--font-montserrat)', 'sans-serif'],
-        serif: ['var(--font-dmtext)', 'serif']
-      },
       colors: {
         dark__principal: {
           100: 'rgba(0, 0, 0, 0.87)',
@@ -25,13 +21,15 @@ const config: Config = {
           400: '#000000'
         },
         dark__text: {
-          100: '#E2E2E2',
-          200: '#515151',
-          300: '#B0AFAE'
+          100: '#515151',
+          200: '#B0AFAE',
+          300: '#1B1B1B'
         },
-        white__principal: {
-          100: '#FFF',
-          200: '#F5F5F5'
+        white__text: {
+          100: '#E2E2E2'
+        },
+        white__fundo: {
+          100: '#F5F5F5'
         },
         gold__principal: {
           100: '#ECD087',

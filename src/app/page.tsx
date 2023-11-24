@@ -1,7 +1,11 @@
+import { About } from '@/components/About';
+import { Banner } from '@/components/Banner';
+
 export default function Home() {
   return (
     <>
-      <h1>ol</h1>
+      <Banner />
+      <About />
     </>
   );
 }
