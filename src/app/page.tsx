@@ -1,6 +1,7 @@
 import { About } from '@/components/About';
 import { AtuationAreas } from '@/components/AtuationAreas';
 import { Banner } from '@/components/Banner';
+import { SolicitarReuniao } from '@/components/SolicitarReuniao';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <About />
       <AtuationAreas />
+      <SolicitarReuniao />
     </>
   );
 }

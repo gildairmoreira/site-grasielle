@@ -20,9 +20,12 @@ export function Banner() {
             Oferecemos serviços jurídicos especializados em questões
             trabalhistas para garantir seus direitos. Conte conosco!
           </p>
-          <button className="btn-default w-1/3 bg-gold__principal-300 hover:bg-gold__principal-400 font-montserrat text-white font-bold py-2 px-4">
+          <a
+            href="#"
+            className="btn-default w-1/3 bg-gold__principal-300 hover:bg-gold__principal-400 font-montserrat text-white font-bold py-2 px-4"
+          >
             Contatar
-          </button>
+          </a>
         </div>
       </section>
     </>
