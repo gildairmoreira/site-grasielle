@@ -64,7 +64,7 @@ export function AtuationAreas() {
       <h1 className="font-dmtext text-white text-4xl py-12 uppercase">
         Áreas de Atuação
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         {services.map((service) => (
           <div
             key={service.id}

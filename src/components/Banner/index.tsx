@@ -22,7 +22,7 @@ export function Banner() {
           </p>
           <a
             href="#"
-            className="btn-default w-1/3 bg-gold__principal-300 hover:bg-gold__principal-400 font-montserrat text-white font-bold py-2 px-4"
+            className="btn-default w-1/3 bg-gold__principal-300 hover:bg-gold__principal-400 font-montserrat text-white text-center font-bold py-2 px-4"
           >
             Contatar
           </a>
