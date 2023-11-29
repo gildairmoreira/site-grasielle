@@ -1,26 +1,31 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@300;400;500;700;800&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
-}
 * {
   padding: 0;
   margin: 0;
 }
 
+.container {
+  @apply mx-auto w-full max-w-[1200px] px-6
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.87);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c09c75;
+  border-radius: 14px;
+}
+
 @layer components {
-  .font-montserrat {
-    font-family: 'Montserrat', sans-serif;
-  }
-  .font-dmtext {
-    font-family: 'DM Serif Text', serif;
-  }
+ 
   .btn-default {
     background: #cdb091;
     color: #fff;

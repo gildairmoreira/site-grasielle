@@ -7,7 +7,13 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-inter)', 'sans-serif']
+    },
     extend: {
+      fontFamily: {
+        dmtext: ['var(--font-dmtext)', 'monospace']
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

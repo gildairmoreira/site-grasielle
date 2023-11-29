@@ -1,19 +1,21 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export function Header() {
   return (
-    <header className="font-montserrat font-medium flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh]">
+    <header className="font-sans font-normal flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh] ">
       <div className="flex justify-between w-full">
         {/* Logo */}
         <Link href="/">
-          <Image
-            src="/images/logo-header.png"
-            alt="Logo da Advogada"
-            width={300}
-            height={75}
-          />
+          <span>
+            <Image
+              src="/images/logo.png"
+              alt="Logo da Advogada"
+              width={300}
+              height={75}
+            />
+          </span>
         </Link>
 
         {/* Navegação */}
@@ -71,7 +73,7 @@ export function Header() {
             hover:border-gold__principal-400
             "
             >
-              Contacto
+              Contato
             </Link>
           </nav>
           <a

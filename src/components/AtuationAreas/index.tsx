@@ -68,7 +68,7 @@ export function AtuationAreas() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex flex-col items-center bg-transparent px-7 py-3 rounded-md shadow-md border-4 border-[#626262]"
+            className="flex flex-col items-center bg-transparent px-7 py-3 rounded-md shadow-md border-4 border-[#626262] font-sans"
           >
             <Image
               src={service.image}
@@ -79,7 +79,7 @@ export function AtuationAreas() {
             />
             <div className="left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-gold__principal-100 rounded-full my-2"></div>
 
-            <h3 className="text-base font-normal text-center mb-2 text-white">
+            <h3 className="text-base text-center mb-2 text-white">
               {service.title}
             </h3>
           </div>

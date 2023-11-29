@@ -27,14 +27,14 @@ export function About() {
                 width={150}
                 height={3}
               />
-              <h3 className="font-dmtext text-2xl uppercase text-dark__text-200 ml-12">
+              <h3 className="font-dmtext text-xl uppercase text-dark__text-200 ml-12">
                 O Escritório
               </h3>
             </span>
             <h2 className="font-dmtext text-6xl text-gold__principal-100 mb-8">
               Sobre
             </h2>
-            <div className="flex flex-col justify-around w-[85%] h-[100%] font-montserrat text-xl text-dark__text-100">
+            <div className="flex flex-col justify-around w-[90%] h-[100%] font-sans font-medium text-xl text-dark__text-100">
               <p>
                 Fundado em 2022, o escritório Grasielle Moreira destaca-se pela
                 atuação humanizada, ética e diligente, oferecendo atendimento
@@ -54,14 +54,14 @@ export function About() {
                 específicas de cada cliente.
               </p>
             </div>
-            <div className="pt-4 flex items-center">
+            <div className="pt-5 flex items-center">
               <Image
-                src="/images/balanca.svg"
+                src="/images/icons/balanca.svg"
                 alt="icone de balança"
                 width={44}
                 height={38}
               />
-              <p className="ml-3 font-montserrat uppercase text-xl font-extrabold text-[#a6a6a6]">
+              <p className="ml-3 font-sans uppercase text-xl font-extrabold text-[#a6a6a6]">
                 OAB/MG 127.300
               </p>
             </div>
