@@ -1,8 +1,38 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaWhatsapp } from 'react-icons/fa';
+import { NavItem } from './nav-item';
 
-export function Header() {
+const NAV_ITEMS = [
+  {
+    label: 'Início',
+    href: '/'
+  },
+  {
+    label: 'Sobre',
+    href: '/sobre'
+  },
+  {
+    label: 'Áreas de Atuação',
+    href: '/areas-de-atuacao'
+  },
+  {
+    label: 'Blog',
+    href: '/blog'
+  },
+  {
+    label: 'Faq',
+    href: '/faq'
+  },
+  {
+    label: 'Contato',
+    href: '/contato'
+  }
+];
+
+export const Header = () => {
   return (
     <header className="font-sans font-normal flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh] ">
       <div className="flex justify-between w-full">
@@ -21,60 +51,9 @@ export function Header() {
         {/* Navegação */}
         <div className="flex items-center space-x-4 pr-6">
           <nav className="space-x-4">
-            <Link
-              href="/"
-              className="
-              hover:border-b-2
-            hover:border-gold__principal-400
-            "
-            >
-              Início
-            </Link>
-            <Link
-              href="/sobre"
-              className="
-              hover:border-b-2
-            hover:border-gold__principal-400
-            "
-            >
-              Sobre
-            </Link>
-            <Link
-              href="/areas-de-atuacao"
-              className="
-              hover:border-b-2
-            hover:border-gold__principal-400
-            "
-            >
-              Áreas de Atuação
-            </Link>
-            <Link
-              href="/blog"
-              className="
-              hover:border-b-2
-            hover:border-gold__principal-400
-            "
-            >
-              Blog
-            </Link>
-            <Link
-              href="/faq"
-              className="
-              hover:border-b-2
-            hover:border-gold__principal-400
-            "
-            >
-              Faq
-            </Link>
-            <Link
-              href="/contacto"
-              className="
-              hover:border-b-2
-            hover:border-gold__principal-400
-            "
-            >
-              Contato
-            </Link>
+            {NAV_ITEMS.map((item) => (
+              <NavItem {...item} key={item.label} />
+            ))}
           </nav>
           <a
             href="LINK_PARA_WHATSAPP"
@@ -90,4 +69,4 @@ export function Header() {
       </div>
     </header>
   );
-}
+};
