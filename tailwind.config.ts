@@ -41,7 +41,8 @@ const config: Config = {
           100: '#ECD087',
           200: 'rgba(173, 144, 113, 0.38)',
           300: '#CDB091',
-          400: '#A08356'
+          400: '#A08356',
+          500: '#BDA86C'
         }
       },
       textDecoration: ['hover', 'focus']
