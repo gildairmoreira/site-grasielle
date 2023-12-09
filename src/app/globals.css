@@ -59,67 +59,92 @@
     z-index: -1;
     border: 1px solid #cdb091;
   }
-
-  .submit-area {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .submit-area::before &::after {
-    box-sizing: border-box;
-  }
-
-  .btn-form {
-    border-color: #fff;
-    color: #fff;
-    background: transparent;
-    color: #cdb091;
-    display: inline-block;
-    font-weight: 600;
-    padding: 12px 55px 17px;
-    border: 1px solid #cdb091;
-    border-top-color: rgb(205, 176, 145);
-    border-right-color: rgb(205, 176, 145);
-    border-bottom-color: rgb(205, 176, 145);
-    border-left-color: rgb(205, 176, 145);
-    border-radius: 0;
-    text-transform: capitalize;
-    -webkit-backface-visibility: hidden;
-    z-index: 1;
-    position: relative;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
+  .btn-default:hover::before {
     transition: all 0.3s;
-  }
-  .btn-form::after {
-    background-color: #fff;
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    border-radius: 0;
-    background: #c09c75;
-    background-color: rgb(192, 156, 117);
-    transition: opacity 0.5s ease-out;
-    z-index: -1;
-    transition: all 0.3s;
-  }
-  .btn-form::before {
-    border-color: #fff;
-    position: absolute;
-    content: '';
-    top: -6px;
-    right: -7px;
-    width: 101%;
-    height: 101%;
-    border-radius: 0;
-    z-index: -1;
-    border: 1px solid #cdb091;
-    border-top-color: rgb(205, 176, 145);
-    border-right-color: rgb(205, 176, 145);
-    border-bottom-color: rgb(205, 176, 145);
-    border-left-color: rgb(205, 176, 145);
-  }
+  top: 0;
+  right: 0;
+}
+
+  /* Adicione essas classes no seu arquivo de estilos (por exemplo, styles.css) */
+
+.submit-area {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Remove o &::after desnecessário na linha abaixo */
+.submit-area::before,
+.submit-area::after {
+  box-sizing: border-box;
+}
+
+.btn-form {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+  display: inline-block;
+  font-weight: 400;
+  padding: 12px 55px 17px;
+  border: 1px solid #cdb091;
+  border-top-color: rgb(205, 176, 145);
+  border-right-color: rgb(205, 176, 145);
+  border-bottom-color: rgb(205, 176, 145);
+  border-left-color: rgb(205, 176, 145);
+  border-radius: 0;
+  text-transform: capitalize;
+  z-index: 1;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  transition: all 0.3s;
+}
+
+.btn-form::after {
+  background-color: #fff;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 0;
+  background: #c09c75;
+  background-color: rgb(192, 156, 117);
+  transition: opacity 0.5s ease-out;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn-form::before {
+  border-color: #fff;
+  position: absolute;
+  content: '';
+  top: -6px;
+  right: -7px;
+  width: 101%;
+  height: 101%;
+  border-radius: 0;
+  z-index: -1;
+  border: 1px solid #cdb091;
+  
+  transition: all 0.3s;
+}
+
+.btn-form:hover {
+  color: #ECD087;
+  font-weight: 800;
+  background-color: #fff;
+}
+.btn-form:active{
+  background-color: #cdb091;
+}
+.btn-form:hover::before {
+  top: 0;
+  right: 0;
+}
+
+.btn-form:hover::after {
+  opacity: 0;
+}
 }
