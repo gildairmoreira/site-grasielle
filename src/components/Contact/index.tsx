@@ -3,7 +3,7 @@ import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
 import { BsClock } from 'react-icons/bs';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const ContactSection: React.FC = () => {
+const ContactSection = () => {
   return (
     <div className="bg-dark__principal-300 py-16 text-white">
       <div className="container mx-auto flex flex-col md:flex-row">
@@ -89,13 +89,23 @@ const ContactSection: React.FC = () => {
               <select
                 id="category"
                 name="category"
-                className="w-full p-4 border placeholder:text-white text-xl bg-transparent"
+                className="w-full p-4 border text-xl bg-transparent"
               >
-                <option value="trabalhista">Direito Trabalhista</option>
-                <option value="familia">Direito Família</option>
-                <option value="tributario">Direito Tributário</option>
-                <option value="criminalista">Direito Criminalista</option>
-                <option value="outro">Outro</option>
+                <option className="bg-gray-500" value="trabalhista">
+                  Direito Trabalhista
+                </option>
+                <option className="bg-gray-500" value="familia">
+                  Direito Família
+                </option>
+                <option className="bg-gray-500" value="tributario">
+                  Direito Tributário
+                </option>
+                <option className="bg-gray-500" value="criminalista">
+                  Direito Criminalista
+                </option>
+                <option className="bg-gray-500" value="outro">
+                  Outro
+                </option>
               </select>
             </div>
             <div className="mb-4">
