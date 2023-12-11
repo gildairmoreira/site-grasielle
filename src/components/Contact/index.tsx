@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const ContactSection = () => {
   return (
-    <div className="bg-dark__principal-300 py-16 text-white">
+    <section id="contato" className="bg-dark__principal-300 py-16 text-white">
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Lado Esquerdo */}
         <div className="md:w-1/2 p-4">
@@ -128,7 +128,7 @@ const ContactSection = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

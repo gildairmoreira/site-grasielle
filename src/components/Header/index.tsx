@@ -12,11 +12,11 @@ const NAV_ITEMS = [
   },
   {
     label: 'Sobre',
-    href: '/sobre'
+    href: '#sobre'
   },
   {
     label: 'Áreas de Atuação',
-    href: '/areas-de-atuacao'
+    href: '#areas-de-atuacao'
   },
   {
     label: 'Blog',
@@ -24,11 +24,11 @@ const NAV_ITEMS = [
   },
   {
     label: 'Faq',
-    href: '/faq'
+    href: '#faq'
   },
   {
     label: 'Contato',
-    href: '/contato'
+    href: '#contato'
   }
 ];
 

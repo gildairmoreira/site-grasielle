@@ -3,6 +3,7 @@ import Image from 'next/image';
 export function About() {
   return (
     <section
+      id="sobre"
       className="w-full py-10 px-3 bg-white flex flex-col bg-no-repeat bg-right bg-[length:500px_500px]"
       style={{ backgroundImage: "url('images/martelo.svg')" }}
     >

@@ -60,7 +60,10 @@ const services: IServicesProps[] = [
 
 export function AtuationAreas() {
   return (
-    <section className="bg-dark__principal-100 px-[10%] py-[2%] flex justify-between items-center flex-col ">
+    <section
+      id="areas-de-atuacao"
+      className="bg-dark__principal-100 px-[10%] py-[2%] flex justify-between items-center flex-col "
+    >
       <h1 className="font-dmtext text-white text-4xl py-12 uppercase">
         Áreas de Atuação
       </h1>

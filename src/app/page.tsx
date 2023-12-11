@@ -4,6 +4,7 @@ import { AtuationAreas } from '@/components/AtuationAreas';
 import { Banner } from '@/components/Banner';
 import Contact from '@/components/Contact';
 import Faq from '@/components/Faq';
+import { Footer } from '@/components/Footer';
 import SocialSection from '@/components/SocialSection';
 import { SolicitarReuniao } from '@/components/SolicitarReuniao';
 
@@ -69,6 +70,7 @@ export default function Home() {
       <Faq faqs={faqs} />
       <Contact />
       <SocialSection />
+      <Footer />
     </>
   );
 }

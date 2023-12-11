@@ -26,7 +26,10 @@ const Faq: React.FC<FAQProps> = ({ faqs }) => {
   };
 
   return (
-    <div className="bg-white__fundo-100 flex flex-col items-center pb-16">
+    <section
+      id="faq"
+      className="bg-white__fundo-100 flex flex-col items-center pb-16"
+    >
       <h2 className="w-[90%] border-l-8 border-gold__principal-100 text-gold__principal-100 text-3xl font-extrabold pl-2 my-16">
         Perguntas Frequentes
       </h2>
@@ -70,7 +73,7 @@ const Faq: React.FC<FAQProps> = ({ faqs }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
