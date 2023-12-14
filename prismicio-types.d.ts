@@ -5,6 +5,47 @@ import type * as prismic from '@prismicio/client';
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 /**
+ * Content for post documents
+ */
+interface PostDocumentData {
+  /**
+   * post image field in *post*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: post.post_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  post_image: prismic.ImageField<never>;
+
+  /**
+   * Titulo post field in *post*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: post.titulo_post
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  titulo_post: prismic.RichTextField;
+}
+
+/**
+ * post document from Prismic
+ *
+ * - **API ID**: `post`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PostDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<PostDocumentData>, 'post', Lang>;
+
+export type AllDocumentTypes = PostDocument;
+
+/**
  * Primary content in *AlternateGrid → Primary*
  */
 export interface AlternateGridSliceDefaultPrimary {
@@ -194,11 +235,14 @@ declare module '@prismicio/client' {
     (
       repositoryNameOrEndpoint: string,
       options?: prismic.ClientConfig
-    ): prismic.Client;
+    ): prismic.Client<AllDocumentTypes>;
   }
 
   namespace Content {
     export type {
+      PostDocument,
+      PostDocumentData,
+      AllDocumentTypes,
       AlternateGridSlice,
       AlternateGridSliceDefaultPrimary,
       AlternateGridSliceDefaultItem,

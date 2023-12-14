@@ -3,6 +3,8 @@ import { Header } from '@/components/Header';
 import { Inter, DM_Serif_Text } from 'next/font/google';
 import type { Metadata } from 'next';
 import './globals.css';
+import SocialSection from '@/components/SocialSection';
+import { Footer } from '@/components/Footer';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -32,6 +34,8 @@ export default function RootLayout({
       <body className="font-montserrat">
         <Header />
         {children}
+        <SocialSection />
+        <Footer />
       </body>
     </html>
   );
