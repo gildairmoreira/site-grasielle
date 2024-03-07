@@ -1,33 +1,150 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.container {
+  @apply mx-auto w-full max-w-[1200px] px-6;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.87);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c09c75;
+  border-radius: 14px;
+}
+
+@layer components {
+  .btn-default {
+    background: #cdb091;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #cdb091;
+    text-transform: capitalize;
+    padding: 12px 55px;
+    z-index: 1;
+    position: relative;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .btn-default::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 0;
+    background: #c09c75;
+    transition: opacity 0.5s ease-out;
+    z-index: -1;
+    transition: all 0.3s;
   }
+  .btn-default::before {
+    position: absolute;
+    content: '';
+    top: -6px;
+    right: -7px;
+    width: 101%;
+    height: 101%;
+    border-radius: 0;
+    z-index: -1;
+    border: 1px solid #cdb091;
+  }
+  .btn-default:hover::before {
+    transition: all 0.3s;
+  top: 0;
+  right: 0;
+}
+
+  /* Adicione essas classes no seu arquivo de estilos (por exemplo, styles.css) */
+
+.submit-area {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Remove o &::after desnecessário na linha abaixo */
+.submit-area::before,
+.submit-area::after {
+  box-sizing: border-box;
+}
+
+.btn-form {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+  display: inline-block;
+  font-weight: 400;
+  padding: 12px 55px 17px;
+  border: 1px solid #cdb091;
+  border-top-color: rgb(205, 176, 145);
+  border-right-color: rgb(205, 176, 145);
+  border-bottom-color: rgb(205, 176, 145);
+  border-left-color: rgb(205, 176, 145);
+  border-radius: 0;
+  text-transform: capitalize;
+  z-index: 1;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  transition: all 0.3s;
+}
+
+.btn-form::after {
+  background-color: #fff;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 0;
+  background: #c09c75;
+  background-color: rgb(192, 156, 117);
+  transition: opacity 0.5s ease-out;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn-form::before {
+  border-color: #fff;
+  position: absolute;
+  content: '';
+  top: -6px;
+  right: -7px;
+  width: 101%;
+  height: 101%;
+  border-radius: 0;
+  z-index: -1;
+  border: 1px solid #cdb091;
+  
+  transition: all 0.3s;
+}
+
+.btn-form:hover {
+  color: #ECD087;
+  font-weight: 800;
+  background-color: #fff;
+}
+.btn-form:active{
+  background-color: #cdb091;
+}
+.btn-form:hover::before {
+  top: 0;
+  right: 0;
+}
+
+.btn-form:hover::after {
+  opacity: 0;
+}
 }
