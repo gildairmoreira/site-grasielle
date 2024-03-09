@@ -12,7 +12,7 @@ export const Footer = () => {
           rel="noreferrer"
           className="text-yellow-500 hover:text-white hover:underline"
         >
-          <span className="hidden md:inline">Powered by Gil</span>
+          <span className="hidden md:inline">Powered by Grasielle</span>
           <FaInstagram className="inline-block ml-1" />
         </a>
       </p>
