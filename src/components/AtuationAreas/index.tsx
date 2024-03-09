@@ -10,49 +10,49 @@ interface IServicesProps {
 const services: IServicesProps[] = [
   {
     title: 'Assessoria na aquisição de imóveis em leilão',
-    image: '/images/Icone_Imoveis.png',
+    image: '/images/icons/Icone_Imoveis.png',
     alt: 'Icone de Imovel',
     id: 1
   },
   {
     title: 'Constituição de holding patrimonial',
-    image: '/images/Icone_Pessoas.png',
+    image: '/images/icons/Icone_Pessoas.png',
     alt: 'Icone de Pessoas',
     id: 2
   },
   {
     title: 'Ajuizamento e defesa em processos de direito imobiliário',
-    image: '/images/Icone_Direito.png',
+    image: '/images/icons/Icone_Direito.png',
     alt: 'Icone do Direito',
     id: 3
   },
   {
     title: 'Constituição de ônus reais',
-    image: '/images/Icone_Onus.png',
+    image: '/images/icons/Icone_Onus.png',
     alt: 'Icone de Onus',
     id: 4
   },
   {
     title: 'Assessoria Judicial para Redução de ITBI e ITCMD',
-    image: '/images/Icone_Reducao.png',
+    image: '/images/icons/Icone_Reducao.png',
     alt: 'Icone de Reducao',
     id: 5
   },
   {
     title: 'Assessoria judicial para utilização de FGTS fora do SFH',
-    image: '/images/Icone_Imposto.png',
+    image: '/images/icons/Icone_Imposto.png',
     alt: 'Icone de Imposto',
     id: 6
   },
   {
     title: 'Assessoria jurídica para condomínios e associações',
-    image: '/images/Icone_Condominio.png',
+    image: '/images/icons/Icone_Condominio.png',
     alt: 'Icone de Condominio',
     id: 7
   },
   {
     title: 'Elaboração e negociação de Contratos Imobiliários',
-    image: '/images/Icone_Contrato.png',
+    image: '/images/icons/Icone_Contrato.png',
     alt: 'Icone de Contrato',
     id: 8
   }
