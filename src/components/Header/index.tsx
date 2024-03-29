@@ -18,10 +18,10 @@ const NAV_ITEMS = [
     label: 'Áreas de Atuação',
     href: '#areas-de-atuacao'
   },
-  {
-    label: 'Blog',
-    href: '/blog'
-  },
+  //{
+  //   label: 'Blog',
+  //   href: '/blog'
+  // },
   {
     label: 'Faq',
     href: '#faq'
@@ -39,24 +39,19 @@ export const Header = () => {
         {/* Logo */}
         <Link href="/">
           <span>
-            <Image
-              src="/images/logo.png"
-              alt="Logo da Advogada"
-              width={300}
-              height={75}
-            />
+            <Image src="/images/logo.png" alt="Logo da Advogada" width={300} height={75} />
           </span>
         </Link>
 
         {/* Navegação */}
         <div className="flex items-center space-x-4 pr-6">
           <nav className="space-x-4">
-            {NAV_ITEMS.map((item) => (
+            {NAV_ITEMS.map(item => (
               <NavItem {...item} key={item.label} />
             ))}
           </nav>
           <a
-            href="LINK_PARA_WHATSAPP"
+            href="https://wa.me/5531997555954?text=Ol%C3%A1%2C+Dra.+Grasielle.+Gostaria+de+agendar+uma+consulta."
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -24,13 +24,9 @@ export const metadata: Metadata = {
   description: 'Site advogada grasielle'
 };
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-br" className={`${inter.variable} ${dmtext.variable}`}>
+    <html lang="pt-br" className={`${inter.variable} ${dmtext.variable} !scroll-smooth`}>
       <body className="font-montserrat">
         <Header />
         {children}

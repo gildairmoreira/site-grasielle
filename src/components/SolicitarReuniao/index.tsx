@@ -17,7 +17,7 @@ export function SolicitarReuniao() {
           <BtnSecundario
             corFundo="white"
             corTexto="dark__text-300"
-            linkBotao="whatsapp"
+            linkBotao="https://wa.me/5531997555954?text=Ol%C3%A1%2C+Dra.+Grasielle.+Gostaria+de+agendar+uma+consulta."
             tamanhotexto="xl"
           >
             Solicitar Reunião

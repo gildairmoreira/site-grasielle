@@ -9,13 +9,12 @@ export const ContactInfos = () => {
       <h2 className="font-dmtext text-4xl mb-4">Contato</h2>
       <div className="border-b-2 w-3/5 border-gold__principal-300 mb-4"></div>
       <p className="mb-4 text-sm md:max-w-[70%]">
-        Estamos prontos para ajudar! Se você tem perguntas, precisa agendar uma
-        consulta ou discutir seu caso, estamos a apenas um clique de distância.
+        Estamos prontos para ajudar! Se você tem perguntas, precisa agendar uma consulta ou discutir seu caso, estamos a
+        apenas um clique de distância.
       </p>
       <p className="mb-11 text-sm md:max-w-[70%]">
-        Simplificamos o processo para que você possa obter a assistência
-        jurídica de que precisa rapidamente. Não hesite, entre em contato agora
-        e permita-nos guiar você na direção certa para uma solução legal eficaz.
+        Simplificamos o processo para que você possa obter a assistência jurídica de que precisa rapidamente. Não
+        hesite, entre em contato agora e permita-nos guiar você na direção certa para uma solução legal eficaz.
       </p>
 
       <div className="flex items-center mb-11">

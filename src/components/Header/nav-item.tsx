@@ -9,7 +9,6 @@ type NavItemProps = {
 
 export const NavItem = ({ label, href }: NavItemProps) => {
   const pathName = usePathname();
-
   const isActive = pathName === href;
 
   return (
