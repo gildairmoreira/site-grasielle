@@ -34,7 +34,7 @@ const NAV_ITEMS = [
 
 export const Header = () => {
   return (
-    <header className="font-sans font-normal flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh] ">
+    <header className="font-sans font-normal flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh] left-0 z-10 shadow-md sticky top-0">
       <div className="flex justify-between w-full">
         {/* Logo */}
         <Link href="/">
