@@ -9,12 +9,7 @@ export interface BlogSlideProps {
   preview: string;
 }
 
-const BlogSlide: React.FC<BlogSlideProps> = ({
-  imageUrl,
-  tags,
-  title,
-  preview
-}) => {
+const BlogSlide: React.FC<BlogSlideProps> = ({ imageUrl, tags, title, preview }) => {
   return (
     <div className="blog-slide">
       <img src={imageUrl} alt={title} className="blog-slide-image" />
@@ -22,10 +17,7 @@ const BlogSlide: React.FC<BlogSlideProps> = ({
         <div className="blog-slide-tags">{tags.join(', ')}</div>
         <h3 className="blog-slide-title">{title}</h3>
         <p className="blog-slide-preview">{preview}</p>
-        <Link
-          href="/blog/[slug]"
-          as={`/blog/${title.toLowerCase().replace(/\s+/g, '-')}`}
-        >
+        <Link href="/blog/[slug]" as={`/blog/${title.toLowerCase().replace(/\s+/g, '-')}`}>
           Ler mais
         </Link>
       </div>

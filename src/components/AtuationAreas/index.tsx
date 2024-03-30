@@ -64,27 +64,17 @@ export function AtuationAreas() {
       id="areas-de-atuacao"
       className="bg-dark__principal-100 px-[10%] py-[2%] flex justify-between items-center flex-col "
     >
-      <h1 className="font-dmtext text-white text-4xl py-12 uppercase">
-        Áreas de Atuação
-      </h1>
+      <h1 className="font-dmtext text-white text-4xl py-12 uppercase">Áreas de Atuação</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        {services.map((service) => (
+        {services.map(service => (
           <div
             key={service.id}
             className="flex flex-col items-center bg-transparent px-7 py-3 rounded-md shadow-md border-4 border-[#626262] font-sans"
           >
-            <Image
-              src={service.image}
-              alt={service.alt}
-              width={90}
-              height={90}
-              className="object-cover mb-4"
-            />
+            <Image src={service.image} alt={service.alt} width={90} height={90} className="object-cover mb-4" />
             <div className="left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-gold__principal-100 rounded-full my-2"></div>
 
-            <h3 className="text-base text-center mb-2 text-white">
-              {service.title}
-            </h3>
+            <h3 className="text-base text-center mb-2 text-white">{service.title}</h3>
           </div>
         ))}
       </div>

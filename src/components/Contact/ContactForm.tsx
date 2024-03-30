@@ -16,7 +16,8 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 export const ContactForm = () => {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     setLoading(true);
 

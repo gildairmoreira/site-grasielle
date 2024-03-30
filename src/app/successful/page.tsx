@@ -1,5 +1,6 @@
 import React from 'react';
-export const successfulPage = () => {
+
+const successfulPage = () => {
   return (
     <section>
       <div>Pagina de Obrigado</div>

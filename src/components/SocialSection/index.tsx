@@ -97,13 +97,7 @@ const SocialSection = () => {
     >
       {/* Parte Esquerda - Logo */}
       <div className="w-full md:w-1/2">
-        <Image
-          src="/images/logo-simbolo.png"
-          alt="Logo da Advogada"
-          width={400}
-          height={400}
-          className="m-auto"
-        />
+        <Image src="/images/logo-simbolo.png" alt="Logo da Advogada" width={400} height={400} className="m-auto" />
       </div>
 
       {/* Parte Direita - Redes Sociais */}
@@ -118,11 +112,7 @@ const SocialSection = () => {
                 <FaFacebook />
               </div>
               <div>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                   Grasielle moreira
                 </a>
               </div>
@@ -132,11 +122,7 @@ const SocialSection = () => {
                 <FaInstagram />
               </div>
               <div>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                   @grasiellemoreirasilva
                 </a>
               </div>
@@ -147,11 +133,7 @@ const SocialSection = () => {
                 <FaLinkedin />
               </div>
               <div>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                   grassiele moreira
                 </a>
               </div>
@@ -162,11 +144,7 @@ const SocialSection = () => {
                 <FaTiktok />
               </div>
               <div>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                   grassiele moreira
                 </a>
               </div>
