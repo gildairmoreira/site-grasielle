@@ -112,7 +112,7 @@ const SocialSection = () => {
                 <FaFacebook />
               </div>
               <div>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                <a href="https://www.faccebook.com/grasielle.moreira.16" target="_blank" rel="noreferrer">
                   Grasielle moreira
                 </a>
               </div>
@@ -122,7 +122,11 @@ const SocialSection = () => {
                 <FaInstagram />
               </div>
               <div>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/grasiellemoreirasilva?igsh=c3NzaWI1OHdraWQ3&utm_source=qr"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   @grasiellemoreirasilva
                 </a>
               </div>
@@ -133,7 +137,11 @@ const SocialSection = () => {
                 <FaLinkedin />
               </div>
               <div>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/grasielle-moreira-da-silva-a2930786/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   grassiele moreira
                 </a>
               </div>

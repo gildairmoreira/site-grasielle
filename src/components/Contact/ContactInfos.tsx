@@ -21,7 +21,7 @@ export const ContactInfos = () => {
         <AiOutlineHome size={50} className="mr-5" />
         <div>
           <h3 className="font-dmtext text-2xl">Endereço</h3>
-          <p>Venda Nova | Belo Horizonte, MG</p>
+          <p>Belo Horizonte | MG</p>
         </div>
       </div>
       <div className="flex items-center mb-11">
@@ -42,7 +42,7 @@ export const ContactInfos = () => {
         <BsClock size={50} className="mr-5" />
         <div>
           <h3 className="font-dmtext text-2xl">Horário</h3>
-          <p>Seg-Sex 9h - 16h</p>
+          <p>Seg-Sex 9h - 18h</p>
         </div>
       </div>
     </div>
