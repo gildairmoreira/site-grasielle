@@ -47,7 +47,7 @@ export const Header = () => {
         <div className="flex items-center space-x-4 pr-6">
           <nav className="space-x-4">
             {NAV_ITEMS.map(item => (
-              <NavItem {...item} key={item.label} />
+              <NavItem {...item} key={item.label} href={item.href} />
             ))}
           </nav>
           <a
