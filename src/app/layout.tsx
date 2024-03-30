@@ -31,9 +31,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-montserrat">
         <Header />
         {children}
+        <Analytics />
         <SocialSection />
         <Footer />
-        <Analytics />
       </body>
     </html>
   );
