@@ -9,25 +9,25 @@ interface IServicesProps {
 
 const services: IServicesProps[] = [
   {
-    title: 'Assessoria na aquisição de imóveis em leilão',
+    title: 'Direito Imobiliário',
     image: '/images/icons/Icone_Imoveis.png',
     alt: 'Icone de Imovel',
     id: 1
   },
   {
-    title: 'Constituição de holding patrimonial',
+    title: 'Direito da Família',
     image: '/images/icons/Icone_Pessoas.png',
     alt: 'Icone de Pessoas',
     id: 2
   },
   {
-    title: 'Ajuizamento e defesa em processos de direito imobiliário',
+    title: 'Direito Penal',
     image: '/images/icons/Icone_Direito.png',
     alt: 'Icone do Direito',
     id: 3
   },
   {
-    title: 'Constituição de ônus reais',
+    title: 'Direito Civil',
     image: '/images/icons/Icone_Onus.png',
     alt: 'Icone de Onus',
     id: 4
@@ -39,19 +39,19 @@ const services: IServicesProps[] = [
     id: 5
   },
   {
-    title: 'Assessoria judicial para utilização de FGTS fora do SFH',
+    title: 'Assessoria e Consultoria em Direito Tributário',
     image: '/images/icons/Icone_Imposto.png',
     alt: 'Icone de Imposto',
     id: 6
   },
   {
-    title: 'Assessoria jurídica para condomínios e associações',
+    title: 'Assessoria jurídica para Empresas',
     image: '/images/icons/Icone_Condominio.png',
     alt: 'Icone de Condominio',
     id: 7
   },
   {
-    title: 'Elaboração e negociação de Contratos Imobiliários',
+    title: 'Elaboração e negociação de Contratos',
     image: '/images/icons/Icone_Contrato.png',
     alt: 'Icone de Contrato',
     id: 8

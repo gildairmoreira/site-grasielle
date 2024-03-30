@@ -31,7 +31,7 @@ export function About() {
             </p>
             <p>
               Com atuação em todo o Brasil, oferecemos consultorias online e presenciais em Belo Horizonte, com atuação
-              full Service. Adaptamos nossos serviços às necessidades específicas de cada cliente.
+              Full Service. Adaptamos nossos serviços às necessidades específicas de cada cliente.
             </p>
           </div>
           <div className="pt-5 flex items-center">
