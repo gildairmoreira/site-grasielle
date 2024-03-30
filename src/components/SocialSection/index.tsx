@@ -1,6 +1,6 @@
 // components/SocialSection.tsx
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 /* const SocialSection = () => {
   return (
@@ -131,17 +131,6 @@ const SocialSection = () => {
             <div className="flex items-center space-x-4 py-3">
               <div className="text-2xl p-1 rounded bg-[#ffffff38] bg-blend">
                 <FaLinkedin />
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-                  grassiele moreira
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4 py-3">
-              <div className="text-2xl p-1 rounded bg-[#ffffff38] bg-blend">
-                <FaTiktok />
               </div>
               <div>
                 <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">

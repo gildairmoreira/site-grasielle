@@ -12,8 +12,7 @@ export function Banner() {
         <h3 className="text-2xl text-gold__principal-300 font-dmtext">Advocacia de Excelência</h3>
         <h1 className="font-dmtext text-6xl text-white my-1">Bem-vindo, Escritório Advocacia Grasielle</h1>
         <p className="font-sans text-xl text-gray-300 my-6">
-          Oferecemos serviços jurídicos especializados em questões trabalhistas para garantir seus direitos. Conte
-          conosco!
+          Oferecemos serviços jurídicos especializado, e eficiente para garantir seus direitos. Conte conosco!
         </p>
         <a
           href="https://wa.me/5531997555954?text=Ol%C3%A1%2C+Dra.+Grasielle.+Gostaria+de+agendar+uma+consulta."

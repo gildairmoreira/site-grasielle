@@ -27,16 +27,16 @@ export function About() {
 
             <p className="mb-4">
               Grasielle é advogada, formada pelas Faculdades Kennedy de Minas Gerais em 2020, com experiência desde o
-              início do mesmo ano. Membro das comissões de Direito e Tecnologia e Marketing Jurídico da OAB
+              início do mesmo ano.
             </p>
             <p>
-              Com atuação em todo o Brasil, oferecemos consultorias online e presenciais em Belo Horizonte, com foco nas
-              áreas trabalhista e empresarial. Adaptamos nossos serviços às necessidades específicas de cada cliente.
+              Com atuação em todo o Brasil, oferecemos consultorias online e presenciais em Belo Horizonte, com atuação
+              full Service. Adaptamos nossos serviços às necessidades específicas de cada cliente.
             </p>
           </div>
           <div className="pt-5 flex items-center">
             <Image src="/images/icons/balanca.svg" alt="icone de balança" width={44} height={38} />
-            <p className="ml-3 font-sans uppercase text-xl font-extrabold text-[#a6a6a6]">OAB/MG 127.300</p>
+            <p className="ml-3 font-sans uppercase text-xl font-extrabold text-[#a6a6a6]">OAB/MG 215.076</p>
           </div>
         </div>
       </main>
