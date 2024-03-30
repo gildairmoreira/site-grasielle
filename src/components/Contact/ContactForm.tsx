@@ -32,7 +32,7 @@ export const ContactForm = () => {
       };
 
       // Envia o formulário usando Axios
-      await axios.post('https://formsubmit.co/ajax/contato.gildair@gmail.com', formData);
+      await axios.post('https://formsubmit.co/ajax/Grasiellemoreira.adv@gmail.com', formData);
 
       // Após o envio bem-sucedido, você pode redirecionar o usuário para uma página de sucesso ou mostrar uma mensagem de sucesso
       window.location.href = '/successful';
