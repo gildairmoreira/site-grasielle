@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import SocialSection from '@/components/SocialSection';
 import { Footer } from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <SocialSection />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
