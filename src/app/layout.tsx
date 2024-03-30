@@ -6,6 +6,7 @@ import './globals.css';
 import SocialSection from '@/components/SocialSection';
 import { Footer } from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -31,9 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-montserrat">
         <Header />
         {children}
-        <Analytics />
         <SocialSection />
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
