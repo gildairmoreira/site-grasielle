@@ -1,6 +1,11 @@
 import React from 'react';
 export const successfulPage = () => {
-  return <div>OBRIGADO</div>;
+  return (
+    <section>
+      <div>Pagina de Obrigado</div>
+      <div></div>
+    </section>
+  );
 };
 
 export default successfulPage;
