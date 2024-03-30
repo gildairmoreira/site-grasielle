@@ -32,10 +32,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-montserrat">
         <Header />
         {children}
+        <SpeedInsights />
+        <Analytics />
         <SocialSection />
         <Footer />
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );
