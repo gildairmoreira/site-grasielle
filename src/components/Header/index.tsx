@@ -34,18 +34,20 @@ const NAV_ITEMS = [
 
 export const Header = () => {
   return (
-    <header className="font-sans font-normal flex items-center bg-dark__principal-200 text-white text-lg p-4 w-full h-[15vh] left-0 z-10 shadow-md sticky top-0">
-      <div className="flex justify-between w-full">
+    <header className="font-sans font-normal bg-dark__principal-200 text-white text-lg p-4 w-full left-0 z-10 shadow-md sticky top-0">
+      <div className="flex justify-between items-center">
         {/* Logo */}
-        <Link href="/">
-          <span>
-            <Image src="/images/logo.png" alt="Logo da Advogada" width={300} height={75} />
-          </span>
-        </Link>
+        <div className="text-center mb-4 md:mb-0">
+          <Link href="/">
+            <span>
+              <Image src="/images/logo.png" alt="Logo da Advogada" width={300} height={75} />
+            </span>
+          </Link>
+        </div>
 
         {/* Navegação */}
         <div className="flex items-center space-x-4 pr-6">
-          <nav className="space-x-4">
+          <nav className="hidden md:flex space-x-4">
             {NAV_ITEMS.map(item => (
               <NavItem {...item} key={item.label} href={item.href} />
             ))}
@@ -54,6 +56,7 @@ export const Header = () => {
             href="https://wa.me/5531997555954?text=Ol%C3%A1%2C+Dra.+Grasielle.+Gostaria+de+agendar+uma+consulta."
             target="_blank"
             rel="noopener noreferrer"
+            className="hidden sm:flex"
           >
             <FaWhatsapp
               className="text-gold__principal-400 transition-colors duration-300 ease-in-out hover:text-white ml-3"
